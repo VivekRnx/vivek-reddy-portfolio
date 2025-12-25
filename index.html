@@ -2,48 +2,481 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vivek Reddy | Robotics & AI Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Reddy N C | Robotics Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <h1>Vivek Reddy</h1>
-        <p>Robotics | AI | Intelligent Automation</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am a Robotics and AI enthusiast with experience in autonomous systems,
-            sensor fusion, SLAM, and intelligent automation. I aim to build reliable,
-            real-world robotic systems.
-        </p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Multi-Sensor SLAM System</h3>
-            <p>
-                Developed a real-time SLAM framework integrating LiDAR, IMU, GNSS,
-                and camera data for autonomous vehicle localization.
-            </p>
-            <p><strong>Tech:</strong> ROS, Python, C++, LiDAR, IMU, Camera</p>
-            <a href="#">GitHub Repo</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">VR</div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Research</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-label">ROBOTICS ENGINEER</div>
+            <h1 class="hero-title">
+                <span class="title-line">VIVEK</span>
+                <span class="title-line">REDDY N C</span>
+            </h1>
+            <p class="hero-subtitle">Autonomous Systems • Sensor Fusion • SLAM Implementation</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">0.48m</div>
+                    <div class="stat-label">Localization Accuracy</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">9-DOF</div>
+                    <div class="stat-label">Pose Estimation</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">20 km/h</div>
+                    <div class="stat-label">Real-Time Testing</div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+                <a href="#projects" class="btn-secondary">View Projects</a>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>
-            <a href="https://github.com/VivekRnx">GitHub</a> |
-            <a href="https://www.linkedin.com/vivekreddync">LinkedIn</a>
-        </p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Graduate student pursuing a Master's degree in Robotics at Johns Hopkins University with 
+                        demonstrated expertise in autonomous systems, sensor fusion, and SLAM implementation.
+                    </p>
+                    <p>
+                        I specialize in developing end-to-end robotics solutions, with a proven track record in 
+                        real-time localization systems achieving sub-meter accuracy. My experience spans from 
+                        autonomous vehicle navigation to industrial automation, with proficiency in ROS, Python, 
+                        and C++ for embedded systems.
+                    </p>
+                    <p>
+                        Currently seeking internship opportunities to contribute to cutting-edge robotics research 
+                        and development while applying advanced knowledge in intelligent systems and autonomous 
+                        vehicle applications.
+                    </p>
+                </div>
+                <div class="about-education">
+                    <div class="education-card">
+                        <div class="edu-icon">🎓</div>
+                        <h3>Johns Hopkins University</h3>
+                        <p class="degree">Master of Science in Engineering (MSE) in Robotics</p>
+                        <p class="duration">August 2025 - Present</p>
+                        <p class="location">Baltimore, MD</p>
+                        <div class="courses">
+                            <span class="course-tag">Robot Devices</span>
+                            <span class="course-tag">Kinematics & Dynamics</span>
+                            <span class="course-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-icon">🎓</div>
+                        <h3>RV College of Engineering</h3>
+                        <p class="degree">Bachelor of Engineering in Electronics and Communication</p>
+                        <p class="duration">July 2018 - July 2022</p>
+                        <p class="location">Bengaluru, India</p>
+                        <p class="gpa">CGPA: 8.01 / 10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Full Stack Automation Developer</h3>
+                                <p class="company">Genpact, Bengaluru</p>
+                            </div>
+                            <span class="duration">Aug 2022 - Jul 2025</span>
+                        </div>
+                        <p class="experience-desc">
+                            Led development of full-stack automated solutions for GE Aerospace engine maintenance, 
+                            streamlining pricing, invoicing, and deal tracking workflows. Directed a team of 3, 
+                            integrating stakeholder-driven features to enhance UX and process efficiency.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Flask</span>
+                            <span class="tech">ReactJS</span>
+                            <span class="tech">FastAPI</span>
+                            <span class="tech">RAG</span>
+                            <span class="tech">SnowFlake DB</span>
+                            <span class="tech">TypeScript</span>
+                        </div>
+                        <div class="achievements">
+                            <div class="achievement">✓ Led team of 3 developers</div>
+                            <div class="achievement">✓ Created AI chatbot for contract queries</div>
+                            <div class="achievement">✓ Delivered complete documentation suite</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>Autonomous Engineer Intern</h3>
+                                <p class="company">WIRIN, Bengaluru</p>
+                            </div>
+                            <span class="duration">Jan 2022 - Jul 2022</span>
+                        </div>
+                        <p class="experience-desc">
+                            Developed a real-time SLAM framework integrating LiDAR-inertial odometry for autonomous 
+                            vehicle state estimation and mapping in complex environments, achieving 9 degrees of 
+                            freedom pose determination through advanced sensor fusion algorithms.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech">ROS</span>
+                            <span class="tech">C++</span>
+                            <span class="tech">Python</span>
+                            <span class="tech">LiDAR</span>
+                            <span class="tech">IMU</span>
+                            <span class="tech">GNSS</span>
+                            <span class="tech">Autoware</span>
+                        </div>
+                        <div class="achievements">
+                            <div class="achievement">✓ 0.48m localization accuracy at 20 KMPH</div>
+                            <div class="achievement">✓ Real-time updates every 0.945 seconds</div>
+                            <div class="achievement">✓ Multi-modal sensor fusion pipeline</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3>IOT Engineer Intern</h3>
+                                <p class="company">Ampere Electric, Bengaluru</p>
+                            </div>
+                            <span class="duration">Apr 2020 - Jul 2020</span>
+                        </div>
+                        <p class="experience-desc">
+                            Developed and deployed an IoT-based smart EV charging station monitoring system using 
+                            Raspberry Pi and multi-sensor arrays for real-time slot detection with live UI and 
+                            database integration.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech">Raspberry Pi</span>
+                            <span class="tech">C++</span>
+                            <span class="tech">Sensors</span>
+                            <span class="tech">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-tag">Featured Project</div>
+                    <h3>Real-Time SLAM for Autonomous Vehicles</h3>
+                    <p class="project-desc">
+                        Implemented a comprehensive SLAM framework employing sensor fusion techniques to integrate 
+                        data from LiDAR, IMU, and GPS. Successfully mapped geographical locations with vehicle 
+                        localization accuracy of 0.5 meters, enabling precise navigation for autonomous systems.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">0.5m</span>
+                            <span class="metric-label">Accuracy</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">9-DOF</span>
+                            <span class="metric-label">State Est.</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">Real-time</span>
+                            <span class="metric-label">Processing</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech">ROS</span>
+                        <span class="tech">C++</span>
+                        <span class="tech">LiDAR</span>
+                        <span class="tech">IMU</span>
+                        <span class="tech">GPS</span>
+                        <span class="tech">Point Cloud</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/VivekRnx" class="project-link" target="_blank">
+                            <span>View on GitHub</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Automatic Irrigation System</h3>
+                    <p class="project-desc">
+                        Developed a microcontroller-based agricultural automation system with soil moisture sensors 
+                        for real-time monitoring and automated irrigation control. Integrated GSM module for remote 
+                        alerts, enabling precision water management.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech">Arduino</span>
+                        <span class="tech">Sensors</span>
+                        <span class="tech">GSM</span>
+                        <span class="tech">C++</span>
+                    </div>
+                    <div class="project-date">July 2019</div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Automatic Railway Gate Operating System</h3>
+                    <p class="project-desc">
+                        Developed an autonomous railway level crossing safety system using microcontroller and 
+                        ultrasonic sensors for real-time train detection. Automated servo-controlled gates with 
+                        audible alarms and LED indicators.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech">Arduino</span>
+                        <span class="tech">Ultrasonic</span>
+                        <span class="tech">Servo</span>
+                        <span class="tech">Safety Systems</span>
+                    </div>
+                    <div class="project-date">December 2018</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Research & Publications</h2>
+            </div>
+            
+            <div class="publication-card">
+                <div class="pub-type">Journal Publication</div>
+                <h3 class="pub-title">
+                    Real Time Localization and Mapping for Autonomous vehicles using LiDAR and IMU
+                </h3>
+                <p class="pub-authors">
+                    Dr. Sujatha D. Badiger, Dr. M Uttara Kumari, <strong>Vivek Reddy N C</strong>, Yathish Kumar Y
+                </p>
+                <p class="pub-venue">
+                    Gradiva Review Journal, Volume 9, Issue 5, 2023
+                </p>
+                <p class="pub-doi">DOI: 10.37897.GRJ.2022.V9I5.23.513010</p>
+                <p class="pub-abstract">
+                    Implemented a SLAM algorithm employing sensor fusion techniques to integrate data from LiDAR, 
+                    IMU, and GPS. Mapped a particular geographical location and was able to locate the exact 
+                    location of the Vehicle with an accuracy of 0.5 meters.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C/C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MATLAB</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Robotics & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ROS</span>
+                        <span class="skill-tag">SLAM</span>
+                        <span class="skill-tag">Sensor Fusion</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">YOLO</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Hardware & Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">Embedded Systems</span>
+                        <span class="skill-tag">LiDAR</span>
+                        <span class="skill-tag">IMU</span>
+                        <span class="skill-tag">GNSS</span>
+                        <span class="skill-tag">Sensors & Actuators</span>
+                        <span class="skill-tag">CAD</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <span class="cert-icon">📜</span>
+                            <div>
+                                <p class="cert-name">C++ for Robotics</p>
+                                <p class="cert-org">The Construct, August 2024</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">📜</span>
+                            <div>
+                                <p class="cert-name">The Joy of Computing using Python</p>
+                                <p class="cert-org">NPTEL, December 2020</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-icon">📜</span>
+                            <div>
+                                <p class="cert-name">The Arduino Platform and C Programming</p>
+                                <p class="cert-org">Coursera, September 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-lead">
+                        I'm currently seeking internship opportunities in robotics and autonomous systems. 
+                        Let's connect and discuss how we can collaborate on cutting-edge projects.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:nvivekreddy1999@gmail.com" class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div>
+                                <p class="method-label">Email</p>
+                                <p class="method-value">nvivekreddy1999@gmail.com</p>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+14434636618" class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div>
+                                <p class="method-label">Phone</p>
+                                <p class="method-value">+1 (443) 463-6618</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://linkedin.com/in/vivekreddync" class="contact-method" target="_blank">
+                            <div class="method-icon">💼</div>
+                            <div>
+                                <p class="method-label">LinkedIn</p>
+                                <p class="method-value">linkedin.com/in/vivekreddync</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://github.com/VivekRnx" class="contact-method" target="_blank">
+                            <div class="method-icon">💻</div>
+                            <div>
+                                <p class="method-label">GitHub</p>
+                                <p class="method-value">github.com/VivekRnx</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <a href="mailto:nvivekreddy1999@gmail.com" class="btn-large">Send Me a Message</a>
+                    <p class="cta-note">Available for internships starting Summer 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vivek Reddy N C. All rights reserved.</p>
+            <p class="footer-note">Built with passion for robotics and autonomous systems</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
