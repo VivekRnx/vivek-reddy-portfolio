@@ -79,15 +79,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Parallax effect for hero grid
-const heroGrid = document.querySelector('.hero-grid');
-
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    if (heroGrid && scrolled < window.innerHeight) {
-        heroGrid.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
-});
+// Parallax for hero grid removed to keep layout static
 
 // Tech stack tag hover effect
 document.querySelectorAll('.tech, .skill-tag').forEach(tag => {
@@ -122,15 +114,7 @@ if (subtitle) {
     }, 2000);
 }
 
-// Add glitch effect to title on load
-const titleLines = document.querySelectorAll('.title-line');
-setTimeout(() => {
-    titleLines.forEach((line, index) => {
-        setTimeout(() => {
-            line.style.animation = 'glitch 0.3s ease';
-        }, index * 200);
-    });
-}, 1500);
+// Title glitch effect removed to avoid text distortion
 
 // Smooth scroll to top when clicking logo
 document.querySelector('.logo').addEventListener('click', () => {
@@ -140,80 +124,6 @@ document.querySelector('.logo').addEventListener('click', () => {
     });
 });
 
-// Add cursor trail effect (optional, for extra flair)
-const cursor = document.createElement('div');
-cursor.className = 'cursor-trail';
-document.body.appendChild(cursor);
-
-let mouseX = 0;
-let mouseY = 0;
-let cursorX = 0;
-let cursorY = 0;
-
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-function animateCursor() {
-    cursorX += (mouseX - cursorX) * 0.1;
-    cursorY += (mouseY - cursorY) * 0.1;
-    
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-    
-    requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
-
-// Add custom cursor style
-const style = document.createElement('style');
-style.textContent = `
-    .cursor-trail {
-        position: fixed;
-        width: 20px;
-        height: 20px;
-        border: 2px solid var(--primary);
-        border-radius: 50%;
-        pointer-events: none;
-        z-index: 9999;
-        mix-blend-mode: difference;
-        transition: width 0.3s, height 0.3s;
-    }
-    
-    a:hover ~ .cursor-trail,
-    button:hover ~ .cursor-trail {
-        width: 40px;
-        height: 40px;
-    }
-    
-    @keyframes glitch {
-        0%, 100% {
-            transform: translate(0);
-        }
-        20% {
-            transform: translate(-2px, 2px);
-        }
-        40% {
-            transform: translate(2px, -2px);
-        }
-        60% {
-            transform: translate(-2px, -2px);
-        }
-        80% {
-            transform: translate(2px, 2px);
-        }
-    }
-    
-    .nav-link.active {
-        color: var(--primary);
-    }
-    
-    .nav-link.active::before {
-        width: 100%;
-    }
-`;
-document.head.appendChild(style);
+// Cursor trail and injected glitch styles removed to avoid moving/distorting elements
 
 console.log('Portfolio initialized successfully!');

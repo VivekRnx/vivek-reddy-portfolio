@@ -122,6 +122,15 @@ body {
     width: 100%;
 }
 
+/* Active nav link styling (kept static, not injected) */
+.nav-link.active {
+    color: var(--primary);
+}
+
+.nav-link.active::before {
+    width: 100%;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -143,17 +152,10 @@ body {
         linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
-    animation: gridMove 20s linear infinite;
+    /* Disabled moving grid to remove parallax effect */
+    animation: none;
 }
 
-@keyframes gridMove {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(50px, 50px);
-    }
-}
 
 .hero-content {
     position: relative;
