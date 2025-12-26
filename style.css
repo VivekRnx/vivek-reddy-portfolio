@@ -582,7 +582,6 @@ section {
 .project-card:hover {
     border-color: var(--primary);
     box-shadow: 0 0 50px rgba(0, 255, 136, 0.3);
-    transform: translateY(-10px);
 }
 
 .project-card:hover::before {
@@ -670,7 +669,7 @@ section {
 }
 
 .project-link:hover {
-    gap: 15px;
+    /* Avoid shifting layout on hover to keep pointer stable */
     text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 
@@ -679,7 +678,8 @@ section {
 }
 
 .project-link:hover svg {
-    transform: translate(3px, -3px);
+    /* Keep icon static to avoid hover-triggered pointer movement */
+    transform: none;
 }
 
 /* Publications Section */
