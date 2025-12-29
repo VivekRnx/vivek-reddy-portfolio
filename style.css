@@ -784,6 +784,10 @@ section {
     letter-spacing: 2px;
 }
 
+.certifications-wide {
+    grid-column: span 2;
+}
+
 .skill-list {
     display: flex;
     flex-direction: column;
