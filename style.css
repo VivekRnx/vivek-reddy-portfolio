@@ -84,7 +84,7 @@ body {
     color: var(--primary);
     text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
     letter-spacing: 2px;
-    cursor: pointer;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300ff88"><rect x="8" y="16" width="8" height="4"/><rect x="6" y="12" width="4" height="4"/><rect x="14" y="12" width="4" height="4"/><rect x="10" y="8" width="4" height="4"/><circle cx="12" cy="4" r="2"/></svg>'), pointer;
 }
 
 .nav-menu {
@@ -268,7 +268,7 @@ body {
     letter-spacing: 2px;
     text-decoration: none;
     border: 2px solid;
-    cursor: pointer;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300ff88"><rect x="8" y="16" width="8" height="4"/><rect x="6" y="12" width="4" height="4"/><rect x="14" y="12" width="4" height="4"/><rect x="10" y="8" width="4" height="4"/><circle cx="12" cy="4" r="2"/></svg>'), pointer;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -678,6 +678,7 @@ section {
     transition: all 0.3s ease;
     position: relative;
     z-index: 2; /* keep link above decorative overlays */
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300ff88"><rect x="8" y="16" width="8" height="4"/><rect x="6" y="12" width="4" height="4"/><rect x="14" y="12" width="4" height="4"/><rect x="10" y="8" width="4" height="4"/><circle cx="12" cy="4" r="2"/></svg>'), pointer;
 }
 
 .project-link:hover {
@@ -692,6 +693,37 @@ section {
 .project-link:hover svg {
     /* Keep icon static to avoid hover-triggered pointer movement */
     transform: none;
+}
+
+.robotic-hand {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+    animation: robotic-wave 2s infinite;
+}
+
+.project-card:hover .robotic-hand {
+    opacity: 1;
+}
+
+@keyframes robotic-wave {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(5deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(0deg) scale(1);
+    }
+    75% {
+        transform: rotate(-5deg) scale(1.1);
+    }
 }
 
 /* Publications Section */
@@ -910,6 +942,7 @@ section {
     border: 1px solid var(--border);
     text-decoration: none;
     transition: all 0.3s ease;
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300ff88"><rect x="8" y="16" width="8" height="4"/><rect x="6" y="12" width="4" height="4"/><rect x="14" y="12" width="4" height="4"/><rect x="10" y="8" width="4" height="4"/><circle cx="12" cy="4" r="2"/></svg>'), pointer;
 }
 
 .contact-method:hover {
